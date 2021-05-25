@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Formulaire</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link href="stylesheets/bootstrap.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">EventBrite/thp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Accueil
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Créer Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Identification</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">S'incrire</a>
+              <a class="dropdown-item" href="#">Se Connecter</a>
+              <a class="dropdown-item" href="#"></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Profil</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<body class="ms-5 me-5 text-dark fw-bold fs-3">
+  <form>
+    <fieldset>
+      <legend>Inscription</legend>
+      <div class="form-group ms-5 me-5">
+        <label for="exampleInputEmail1" class="form-label mt-4">Adresse Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group ms-5 me-5">
+        <label for="exampleInputPassword1" class="form-label mt-4">Mot de passe</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="MDP">
+      </div>
+      <div class="form-group ms-5 me-5">
+        <label for="exampleInputPassword1" class="form-label mt-4">Répéter mot de passe</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="MDP">
+      </div>
+      <div class="form-group ms-5 me-5">
+        <label for="exampleSelect1" class="form-label mt-4">Vueillez sélectioner</label>
+        <select class="form-select" id="exampleSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group ms-5 me-5">
+        <label for="exampleTextarea" class="form-label mt-4">Description</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
+      <div class="form-group ms-5 me-5">
+        <label for="formFile" class="form-label mt-4">Telecharger document</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+      <div class=" mt-5 d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+  </form>
+
+
+</body>
